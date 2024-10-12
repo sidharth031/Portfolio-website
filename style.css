@@ -1,0 +1,272 @@
+ *{
+    box-sizing:border-box;
+  }
+  body{
+    font-family:system-ui;
+    background-color:black;
+  }
+  .wraper{
+    max-width:1200px;
+    margin:auto;
+  }
+  .header{
+    
+    align-items:center;
+    line-height:1.5;
+    background-color:#F7F2EF;
+    border-radius:0.5rem;
+    display:flex;
+    justify-content:space-between;
+    padding: 1rem 1.3rem;
+  }
+  .navbar,.menu{
+    display:flex;
+    align-items:center;
+  }
+  .navbar{
+    gap:1rem;
+  }
+  .menu{
+    font-weight:500;
+    display:none;
+    gap:0.5rem;
+    font-size:15px;
+  }
+  
+  .contact-btn{
+    background-color:#FFED4F;
+    padding:0.2rem 1rem;
+    border-radius:1rem;
+    border:1px solid black;
+    box-shadow: 2px 2px 0px 0px black;
+    font-weight:500;
+    transition: transform 0.25s;
+    &:hover{
+     transform:scale(1.1);
+      cursor:pointer;
+    }
+  }
+  
+  
+  
+  .font-w-500{
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:0.2rem;
+  }
+  
+  section{
+    margin-top:0.5rem;
+  }
+  .icon-burger{
+    display:block;
+  }
+  .section-img{
+    position:relative;
+    overflow:hidden;
+    column-gap:2rem;
+    border-radius:0.5rem;
+    background-color:#f5f4f3;
+    padding:clamp(1rem,3vw,3rem) clamp(2rem,5vw,5rem);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));
+  }
+  
+  img{
+    
+    height:auto;
+    width:100%;
+    object-fit:cover;
+    
+  }
+  
+  .image{
+    display:grid;
+    place-items:center;
+    position:relative;
+    
+  }
+  
+  h1{
+    font-size:clamp(20px,5vw + 10px,50px);
+    line-height: 1;
+    margin-bottom:0.5rem;
+  }
+  p{
+    color: var(--text-color);
+  }
+  
+  .texto{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    JUSTIFY-ITEMS:START;
+    GAP:1REM;
+    font-weight: bold;
+  }
+  
+  
+  svg{
+    height:20px;
+    width:20px;
+  }
+  
+  .icon-card{
+    height:30px;
+    width:30px;
+  }
+  .title-card{
+    font-weight:600;
+    font-size:20px;
+  }
+  .p-card{
+    font-size:15px;
+    color:var(--text-color);
+  }
+  .reset-section{
+    grid-template-columns:auto;
+    gap:1rem;
+  }
+  .yellow{
+    background-color:#FFED4F;
+  }
+  .green{
+    background-color:#0DFFA8;
+  }
+  .violet{
+    background-color:#FFD9FE;
+  }
+  
+  .section-img > * {
+    z-index: 3;
+  }
+  
+  .section-img::before{
+    
+    content:'';
+    height:10rem;
+    width:10rem;
+    background-color:#f6cd6d;
+    border-radius:50%;
+    filter:blur(80px);
+    position:absolute;
+    right:3%;
+    top:50%;
+    z-index:0;
+  }
+  :root{
+    --text-color:#474747;
+  }
+  
+  .card{
+   
+    border-radius:0.5rem;
+    padding:1rem 1rem;
+    display:grid;
+    gap:1rem;
+    justify-items:start;
+  }
+  .section-tres-columnas{
+    gap:0.5rem;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+  }
+  
+  .btn-card{
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius:1rem;
+    background-color:black;
+    color:white;
+    border:none;
+    transition:filter 0.2s;
+    cursor:pointer;
+    padding: 0.3rem 1rem;
+  }
+  .btn-card:hover{
+    filter:drop-shadow(2px 2px 0px lightgrey);
+  }
+  
+  .btn-card svg{
+    fill:white;
+  }
+  
+  
+  
+  .brutal-btn{
+    COLOR:BLACK;
+    FONT-WEIGHT:700;
+    margin: 10px;
+    PADDING:0.5REM 2REM;
+    BORDER-RADIUS:2REM;
+    BACKGROUND-COLOR:TRANSPARENT;
+    BORDER:1PX SOLID BLACK;
+    BOX-SHADOW:2PX 4PX 0PX 0PX BLACK;
+    transition: transform 0.25s;
+    &:hover{
+     transform:scale(1.1);
+      cursor:pointer;
+    }
+  }
+  .centrado{
+    place-items:Center;
+  }
+  
+  .blanco{
+    background-color:white;
+  }
+  .menu>div:hover{
+        text-decoration: underline;
+      text-underline-offset: 0.3rem;
+    cursor:pointer;
+        text-decoration-thickness: 0.2rem;
+  }
+  
+  
+  .borde-negro{
+    border-radius:1rem;
+    border:3px solid black;
+    clip-path:none;
+  }
+  @media (min-width: 750px){
+    .menu{
+      display:flex;
+    }
+    .section-tres-columnas{
+       grid-template-columns:repeat(3,1fr);
+    }
+    .icon-burger{
+      display:none;
+    }
+  }
+  
+  
+
+  form {
+    margin-top: 20px;
+    width: 500px;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
